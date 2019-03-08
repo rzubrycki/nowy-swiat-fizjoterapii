@@ -1,0 +1,18 @@
+.title {
+  cursor: pointer;
+}
+
+.content {
+  overflow: hidden;
+}
+
+.contentWrapper {
+}
+
+.arrowIcon {
+  transition: all 0.6s cubic-bezier(0.08, 1.09, 0.32, 1.275);
+
+  &.open {
+    transform: rotate(180deg);
+  }
+}

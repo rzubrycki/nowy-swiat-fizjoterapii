@@ -1,0 +1,47 @@
+a {
+  color: $black;
+  transition: all 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+    color: $gold;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 30px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  font-family: 'Raleway', sans-serif;
+
+  .logo {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  nav.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .link {
+      font-size: 20px;
+      padding: 5px;
+      display: block;
+    }
+  }
+
+  address.bioInfo {
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+  }
+}

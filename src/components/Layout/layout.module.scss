@@ -1,0 +1,15 @@
+.container {
+  margin: 30px 250px 30px 30px;
+  padding: 24px;
+  min-height: calc(100vh - 110px);
+  position: relative;
+  background-image: radial-gradient(
+    at center top,
+    $white 0px,
+    $white 15%,
+    rgb(233, 233, 231) 100%
+  );
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

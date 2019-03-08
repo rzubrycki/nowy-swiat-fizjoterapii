@@ -1,0 +1,20 @@
+.intro {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: url('../../assets/images/portrait.jpg') no-repeat;
+  background-size: cover;
+}
+
+.introHeading {
+  position: absolute;
+  bottom: 100px;
+  z-index: 10;
+  width: 50%;
+
+  .introText {
+    color: $white;
+  }
+}
