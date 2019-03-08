@@ -1,6 +1,7 @@
 h2 {
   font-family: 'Baloo', cursive;
   font-size: 50px;
+  text-transform: capitalize;
   margin: 0 0 40px;
   color: $gold;
 }
@@ -8,4 +9,18 @@ h2 {
 p {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+}
+
+a {
+  color: $black;
+  transition: all 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+    color: $gold;
+  }
+}
+
+.gatsby-image-wrapper {
+  height: calc(100vh - 60px);
 }
