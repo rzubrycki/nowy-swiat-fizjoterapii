@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import styles from './offers.module.scss'
 import Layout from '../../components/Layout/layout'
 import posed from 'react-pose'
-import ArrowUp from '../../assets/images/arrow-up.svg'
+import ArrowUpIcon from '../../assets/images/arrow-up.svg'
 
 const data = [
   {
@@ -38,13 +38,13 @@ export default class offers extends Component {
               >
                 {open === i ? (
                   <img
-                    src={ArrowUp}
+                    src={ArrowUpIcon}
                     alt="arrow up"
                     className={styles.arrowIcon}
                   />
                 ) : (
                   <img
-                    src={ArrowUp}
+                    src={ArrowUpIcon}
                     alt="arrow up"
                     className={`${styles.arrowIcon} ${styles.open}`}
                   />

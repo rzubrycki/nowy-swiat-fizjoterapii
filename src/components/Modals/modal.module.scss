@@ -1,0 +1,20 @@
+.modalWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .closeButton {
+    height: 24px;
+    width: 24px;
+    display: block;
+    background-color: $white;
+    position: absolute;
+    top: -32px;
+    right: -32px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

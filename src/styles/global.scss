@@ -44,41 +44,9 @@ address {
   color: $black;
 }
 
-article {
-  max-width: 580px;
-  margin: 0 auto;
-
-  p {
-    margin-bottom: 20px;
-
-    &:last-of-type {
-      margin-bottom: 40px;
-    }
-  }
-
-  .highlightedText {
-    font-size: 18px;
-    font-weight: 600;
-  }
-
-  .dialogButtons {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.gatsby-image-wrapper {
-  height: calc(100vh - 60px);
-}
-
-.sectionHeading {
-  text-align: center;
-  margin-top: 50px;
-}
-
 button {
   position: relative;
-  padding: 10px 20px;
+  padding: 10px 25px;
   margin: 0 10px;
   border: 2px solid $gold;
   color: $black;
@@ -111,4 +79,63 @@ button {
       height: calc(100% + 10px);
     }
   }
+}
+
+article {
+  max-width: 580px;
+  margin: 0 auto;
+
+  p {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+
+  .highlightedText {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .dialogButtons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.gatsby-image-wrapper {
+  height: calc(100vh - 60px);
+}
+
+.sectionHeading {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
+.customModalContainer {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 2px solid $gold;
+  background: $white;
+  overflow: visible;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
+.customModalOverlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: $white;
 }

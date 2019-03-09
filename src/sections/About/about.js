@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 import Layout from '../../components/Layout/layout'
 import Modal from 'react-modal'
+import EducationalModal from '../../components/Modals/educationsModal'
+import CoursesModal from '../../components/Modals/coursesModal'
 
 export default class extends Component {
   constructor() {
@@ -9,11 +11,12 @@ export default class extends Component {
 
     this.state = {
       modalIsOpen: false,
+      modalContent: 0,
     }
   }
 
-  handleOpenModal = () => {
-    this.setState({ modalIsOpen: true })
+  handleOpenModal = id => {
+    this.setState({ modalIsOpen: true, modalContent: id })
   }
 
   handleCloseModal = () => {
@@ -47,30 +50,27 @@ export default class extends Component {
             sit.
           </p>
           <div className="dialogButtons">
-            <button onClick={this.handleOpenModal}>Wykształcenie</button>
-            <button>Przebyte Kursy</button>
+            <button onClick={() => this.handleOpenModal(1)}>
+              Wykształcenie
+            </button>
+            <button onClick={() => this.handleOpenModal(2)}>
+              Przebyte Kursy
+            </button>
           </div>
         </article>
-
         <Modal
           isOpen={this.state.modalIsOpen}
           onRequestClose={this.handleCloseModal}
-          onAfterOpen={this.afterOpenModal}
+          overlayClassName="customModalOverlay"
+          className="customModalContainer"
           shouldCloseOnOverlayClick={true}
           ariaHideApp={false}
         >
-          dupa
-          <button onClick={this.handleCloseModal}>Close Modal</button>
-        </Modal>
-        <Modal
-          isOpen={this.state.modalIsOpen}
-          onRequestClose={this.handleCloseModal}
-          onAfterOpen={this.afterOpenModal}
-          shouldCloseOnOverlayClick={true}
-          ariaHideApp={false}
-        >
-          wielka dupa
-          <button onClick={this.handleCloseModal}>Close Modal</button>
+          {this.state.modalContent === 1 ? (
+            <EducationalModal close={this.handleCloseModal} />
+          ) : (
+            <CoursesModal close={this.handleCloseModal} />
+          )}
         </Modal>
       </Layout>
     )

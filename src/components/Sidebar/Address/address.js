@@ -10,7 +10,7 @@ export default () => (
     <br />
     16-030, Supraśl
     <br />
-    +48 506 171 274‬
+    +48 502 489 314
     <br />
     <a href="mailto:aneczka.roczniak@gmai.com?subject=Zapytanie%20ze%20strony%20ania.pl">
       aneczka.roczniak@gmail.com

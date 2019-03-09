@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Nowy Świat Fizjoterapii',
+    title:
+      'Nowy Świat Fizjoterapii Anna Roczniak-Zubrycka - Fizjoterapia, Supraśl',
     description: 'Gabinet Fizjoterapii.',
   },
   plugins: [
@@ -13,7 +14,7 @@ module.exports = {
         background_color: `#DCD0C0`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: `src/assets/images/globe.svg`, // This path is relative to the root of the site.
+        icon: `src/assets/images/globe.svg`,
         include_favicon: true,
       },
     },
