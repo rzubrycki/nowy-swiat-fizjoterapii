@@ -21,12 +21,13 @@ export default () => (
       <div className={styles.introSection}>
         <Img fluid={data.introImage.childImageSharp.fluid} />
         <div className={styles.introHeading}>
-          <h2>witaj</h2>
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            placeat illum saepe laborum?
+          </h1>
           <p className={styles.introText}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            placeat illum saepe laborum? Illum praesentium, alias vel non dolore
-            hic odio error explicabo eos nam officia repellendus odit debitis
-            sit.
+            placeat illum saepe laborum?
           </p>
         </div>
       </div>

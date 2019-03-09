@@ -1,8 +1,9 @@
 import React from 'react'
-import styles from './address.module.scss'
 
 export default () => (
-  <address className={styles.bioInfo}>
+  <address>
+    Nowy Świat Fizjoterapii
+    <br />
     Anna Roczniak-Zubrycka
     <br />
     ul. Nowy Świat 70B
@@ -11,10 +12,7 @@ export default () => (
     <br />
     +48 506 171 274‬
     <br />
-    <a
-      className={styles.email}
-      href="mailto:aneczka.roczniak@gmai.com?subject=Zapytanie%20ze%20strony%20ania.pl"
-    >
+    <a href="mailto:aneczka.roczniak@gmai.com?subject=Zapytanie%20ze%20strony%20ania.pl">
       aneczka.roczniak@gmail.com
     </a>
   </address>

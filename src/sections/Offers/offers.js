@@ -28,7 +28,7 @@ export default class offers extends Component {
 
     return (
       <Layout>
-        <h2>Oferta</h2>
+        <h2 className="sectionHeading">Oferta</h2>
         <Fragment>
           {data.map(({ title, content }, i) => (
             <Fragment key={i}>

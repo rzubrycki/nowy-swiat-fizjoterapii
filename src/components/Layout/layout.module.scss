@@ -5,9 +5,9 @@
   position: relative;
   background-image: radial-gradient(
     at center top,
-    $white 0px,
-    $white 15%,
-    rgb(233, 233, 231) 100%
+    #fff 0px,
+    #fff 15%,
+    $white 100%
   );
   background-size: cover;
   background-position: center center;
