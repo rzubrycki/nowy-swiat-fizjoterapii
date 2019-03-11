@@ -6,7 +6,7 @@
   "license": "private",
   "author": "Robert Zubrycki",
   "scripts": {
-    "build": "echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> .env.production && gatsby build",
+    "build": "echo GATSBY_SITE_RECAPTCHA_KEY=$GATSBY_SITE_RECAPTCHA_KEY >> .env.production && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",

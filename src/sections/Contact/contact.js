@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../../components/Layout/layout'
 import Recaptcha from 'react-google-recaptcha'
 
-const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
+const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY;
 
 export default () => (
   <Layout>
