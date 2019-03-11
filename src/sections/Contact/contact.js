@@ -1,5 +1,7 @@
 import React from 'react'
+
 import Layout from '../../components/Layout/layout'
+import Recaptcha from 'react-google-recaptcha'
 
 export default () => (
   <Layout>
@@ -9,13 +11,13 @@ export default () => (
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      data-netlify-recaptcha="true"
     >
       {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
       <input type="hidden" name="form-name" value="kontakt" />
       <p hidden>
         <label>
-          Don’t fill this out:{' '}
-          <input name="bot-field" />
+          Don’t fill this out: <input name="bot-field" />
         </label>
       </p>
       <p>
@@ -40,6 +42,10 @@ export default () => (
         </label>
       </p>
       <p>
+        <Recaptcha
+          ref="recaptcha"
+          sitekey="6Lfw4JYUAAAAANZyfH4NtonEoUPe0AzMhdvVd7qi"
+        />
         <button type="submit">Send</button>
       </p>
     </form>
