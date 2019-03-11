@@ -10,6 +10,7 @@ export default () => (
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
+      <input type="hidden" name="bot-field" />
       <input type="text" name="name" placeholder="your name" />
       <button>send</button>
     </form>
