@@ -5,14 +5,15 @@ export default () => (
   <Layout>
     <h2 className="sectionHeading">Kontakt</h2>
     <form
-      name="contact"
+      name="contact-form"
       method="post"
       data-netlify="true"
-      data-netlify-honeypot="bot-field"
+      netlify-honeypot="bot-field"
     >
-      <input type="hidden" name="bot-field" />
-      <input type="text" name="name" placeholder="your name" />
-      <button>send</button>
+      <input hidden name="bot-field" />
+      <input type="text" placeholder="name" name="name" />
+      <div data-netlify-recaptcha />
+      <button>Send</button>
     </form>
   </Layout>
 )
