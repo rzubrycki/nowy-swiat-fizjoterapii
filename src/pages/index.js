@@ -24,6 +24,7 @@ export default () => (
     render={data => (
       <React.Fragment>
         <Helmet>
+          <html lang="pl" />
           <title>{data.site.siteMetadata.defaultTitle}</title>
         </Helmet>
         <Element name="intro" className="element">

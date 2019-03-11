@@ -1,7 +1,9 @@
 import React from 'react'
 
+import styles from './address.module.scss'
+
 export default () => (
-  <address>
+  <address className={styles.address}>
     Nowy Świat Fizjoterapii
     <br />
     Anna Roczniak-Zubrycka

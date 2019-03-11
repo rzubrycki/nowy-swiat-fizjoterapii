@@ -1,18 +1,11 @@
-.title {
-  cursor: pointer;
-}
-
-.content {
-  overflow: hidden;
-}
-
 .contentWrapper {
-}
+  max-width: 600px;
+  margin: 0 auto;
 
-.arrowIcon {
-  transition: all 0.6s cubic-bezier(0.08, 1.09, 0.32, 1.275);
-
-  &.open {
-    transform: rotate(180deg);
+  .blockHeading {
+    font-size: 20px;
+    font-weight: 600;
+    color: $black;
+    margin: 25px 0;
   }
 }

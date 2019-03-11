@@ -8,11 +8,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `Nowy Świat Fizjoterapii Anna Roczniak-Zubrycka`,
+        short_name: `Nowy Świat Fizjoterapii`,
         start_url: `/`,
-        background_color: `#DCD0C0`,
-        theme_color: `#a2466c`,
+        background_color: `#F4F4F4`,
+        theme_color: `#F4F4F4`,
         display: `standalone`,
         icon: `src/assets/images/globe.svg`,
         include_favicon: true,

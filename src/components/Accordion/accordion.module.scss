@@ -1,0 +1,44 @@
+h6 {
+  cursor: pointer;
+  padding: 30px 20px;
+  border-top: 1px solid lighten($gold, 10%);
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: $black;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:first-of-type {
+    border-top: none;
+  }
+
+  .duration {
+    display: block;
+    position: absolute;
+    right: 20px;
+    color: $gray;
+  }
+}
+
+.content {
+  overflow: hidden;
+}
+
+.contentWrapper {
+  p {
+    margin: 0;
+    padding: 0 0 30px 54px;
+    color: $gray;
+  }
+}
+
+.arrowIcon {
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+
+  &.open {
+    transform: rotate(-90deg);
+  }
+}

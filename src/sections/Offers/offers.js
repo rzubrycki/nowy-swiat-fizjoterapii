@@ -1,66 +1,35 @@
-import React, { Component, Fragment } from 'react'
+import React from 'react'
+
 import styles from './offers.module.scss'
 import Layout from '../../components/Layout/layout'
-import posed from 'react-pose'
-import ArrowUpIcon from '../../assets/images/arrow-up.svg'
+import Accordion from '../../components/Accordion/accordion'
+import {
+  IndividualWorkWithPatient,
+  PhysioTherapy,
+  WorkWithMachines,
+  Aestetihcs,
+} from './offersData'
 
-const data = [
-  {
-    title: 'Terapia',
-    content: `Terapia manualna jest najbardziej bolesna`,
-  },
-  {
-    title: 'Fala uderzeniowa',
-    content: `It doesn't matter how much content you put in each accordian. You only have to define one posed component that animates to "auto" and reuse that.It doesn't matter how much content you put in each accordian. You only have to define one posed component that animates to "auto" and reuse that.It doesn't matter how much content you put in each accordian. You only have to define one posed component that animates to "auto" and reuse that.It doesn't matter how much content you put in each accordian. You only have to define one posed component that animates to "auto" and reuse that.It doesn't matter how much content you put in each accordian. You only have to define one posed component that animates to "auto" and reuse that.It doesn't matter how much content you put in each accordian. You only have to define one posed component that animates to "auto" and reuse that.It doesn't matter how much content you put in each accordian. You only have to define one posed component that animates to "auto" and reuse that.`,
-  },
-]
-
-const Content = posed.div({
-  closed: { height: 0 },
-  open: { height: 'auto' },
-})
-
-export default class offers extends Component {
-  state = { open: false }
-
-  render() {
-    const { open } = this.state
-
-    return (
-      <Layout>
-        <h2 className="sectionHeading">Oferta</h2>
-        <Fragment>
-          {data.map(({ title, content }, i) => (
-            <Fragment key={i}>
-              <h3
-                className={styles.title}
-                onClick={() => this.setState({ open: open === i ? false : i })}
-              >
-                {open === i ? (
-                  <img
-                    src={ArrowUpIcon}
-                    alt="arrow up"
-                    className={styles.arrowIcon}
-                  />
-                ) : (
-                  <img
-                    src={ArrowUpIcon}
-                    alt="arrow up"
-                    className={`${styles.arrowIcon} ${styles.open}`}
-                  />
-                )}
-                {title}
-              </h3>
-              <Content
-                className={styles.content}
-                pose={open === i ? 'open' : 'closed'}
-              >
-                <div className={styles.contentWrapper}>{content}</div>
-              </Content>
-            </Fragment>
-          ))}
-        </Fragment>
-      </Layout>
-    )
-  }
-}
+export default () => (
+  <Layout>
+    <div className={styles.contentWrapper}>
+      <h2>Oferta</h2>
+      <div className={styles.accordionWrapper}>
+        <p className={styles.blockHeading}>Indywidualna praca z pacjentem:</p>
+        <Accordion data={IndividualWorkWithPatient} />
+      </div>
+      <div>
+        <p className={styles.blockHeading}>Fizykoterapia:</p>
+        <Accordion data={PhysioTherapy} />
+      </div>
+      <div>
+        <p className={styles.blockHeading}>Praca z urządzeniem:</p>
+        <Accordion data={WorkWithMachines} />
+      </div>
+      <div>
+        <p className={styles.blockHeading}>Estetyka:</p>
+        <Accordion data={Aestetihcs} />
+      </div>
+    </div>
+  </Layout>
+)

@@ -3,19 +3,23 @@ h2,
 h3,
 h4 {
   font-family: 'Baloo', cursive;
-  text-transform: uppercase;
   font-weight: 100;
-  color: $gold;
 }
 
 h1 {
   font-size: 22px;
   margin-bottom: 20px;
+  color: $gold;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 35px;
-  margin: 0 0 40px;
+  margin: 50px 0;
+  color: $gold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
 }
 
 p {
@@ -27,21 +31,12 @@ p {
 
 a {
   color: $black;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     cursor: pointer;
     color: $gold;
   }
-}
-
-address {
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 20px;
-  color: $black;
 }
 
 button {
@@ -67,7 +62,7 @@ button {
     right: 0;
     bottom: 0;
     margin: auto;
-    transition: all 0.4s;
+    transition: all 0.3s ease-in-out;
   }
 
   &:hover {
@@ -82,7 +77,7 @@ button {
 }
 
 article {
-  max-width: 580px;
+  max-width: 600px;
   margin: 0 auto;
 
   p {
@@ -91,9 +86,14 @@ article {
     &:last-of-type {
       margin-bottom: 40px;
     }
+
+    &:not(.highlightedText) {
+      color: $gray;
+    }
   }
 
   .highlightedText {
+    color: $black;
     font-size: 18px;
     font-weight: 600;
   }
@@ -108,13 +108,21 @@ article {
   height: calc(100vh - 60px);
 }
 
-.sectionHeading {
-  text-align: center;
-  margin-top: 50px;
-}
-
 .ReactModal__Body--open {
   overflow-y: hidden;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
 }
 
 .customModalContainer {
@@ -128,7 +136,7 @@ article {
   overflow: visible;
   border-radius: 4px;
   outline: none;
-  padding: 20px;
+  padding: 60px 100px;
 }
 
 .customModalOverlay {

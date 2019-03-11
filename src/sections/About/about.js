@@ -49,6 +49,10 @@ export default class extends Component {
             hic odio error explicabo eos nam officia repellendus odit debitis
             sit.
           </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            placeat illum saepe laborum?
+          </p>
           <div className="dialogButtons">
             <button onClick={() => this.handleOpenModal(1)}>
               Wykształcenie
