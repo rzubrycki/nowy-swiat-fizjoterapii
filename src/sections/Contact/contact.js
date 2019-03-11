@@ -43,7 +43,7 @@ export default () => (
         </label>
       </p>
       <p>
-        <Recaptcha ref="recaptcha" sitekey={RECAPTCHA_KEY} />
+        <Recaptcha sitekey={RECAPTCHA_KEY} />
         <button type="submit">Send</button>
       </p>
     </form>
