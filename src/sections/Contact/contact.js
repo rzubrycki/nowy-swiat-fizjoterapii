@@ -3,6 +3,8 @@ import React from 'react'
 import Layout from '../../components/Layout/layout'
 import Recaptcha from 'react-google-recaptcha'
 
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
+
 export default () => (
   <Layout>
     <h2 className="sectionHeading">Kontakt</h2>
@@ -13,7 +15,6 @@ export default () => (
       data-netlify-honeypot="bot-field"
       data-netlify-recaptcha="true"
     >
-      {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
       <input type="hidden" name="form-name" value="kontakt" />
       <p hidden>
         <label>
@@ -42,10 +43,7 @@ export default () => (
         </label>
       </p>
       <p>
-        <Recaptcha
-          ref="recaptcha"
-          sitekey="6Lfw4JYUAAAAANZyfH4NtonEoUPe0AzMhdvVd7qi"
-        />
+        <Recaptcha ref="recaptcha" sitekey={RECAPTCHA_KEY} />
         <button type="submit">Send</button>
       </p>
     </form>
