@@ -32,14 +32,14 @@ export default class extends Component {
       })
       return (
         <div className="mapWrapper">
-          <Map center={position} zoom={this.state.zoom} scrollWheelZoom={false}>
+          {/* <Map center={position} zoom={this.state.zoom} scrollWheelZoom={false}>
             <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
             <Marker position={position} ref={initMarker} icon={customMarker}>
               <Popup>
                 <Address />
               </Popup>
             </Marker>
-          </Map>
+          </Map> */}
         </div>
       )
     }
