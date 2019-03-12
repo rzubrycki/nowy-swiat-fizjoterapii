@@ -4,9 +4,9 @@ import Address from '../Sidebar/Address/address'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 
-let leaflet;
+let leaflet
 if (typeof window !== 'undefined') {
-  leaflet = require('leaflet');
+  leaflet = require('leaflet')
 }
 
 export default class extends Component {
@@ -27,16 +27,20 @@ export default class extends Component {
     }
     const position = [this.state.lat, this.state.lng]
     if (typeof window !== 'undefined') {
-      const customMarker = leaflet.icon({ iconUrl: require('../../assets/images/marker.svg'), })
+      const customMarker = leaflet.icon({
+        iconUrl: require('../../assets/images/marker.svg'),
+      })
       return (
-        <Map center={position} zoom={this.state.zoom} scrollWheelZoom={false}>
-          <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
-          <Marker position={position} ref={initMarker} icon={customMarker}>
-            <Popup>
-              <Address />
-            </Popup>
-          </Marker>
-        </Map>
+        <div className="mapWrapper">
+          <Map center={position} zoom={this.state.zoom} scrollWheelZoom={false}>
+            <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
+            <Marker position={position} ref={initMarker} icon={customMarker}>
+              <Popup>
+                <Address />
+              </Popup>
+            </Marker>
+          </Map>
+        </div>
       )
     }
     return null
