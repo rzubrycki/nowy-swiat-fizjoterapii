@@ -15,11 +15,10 @@ h1 {
 
 h2 {
   font-size: 35px;
-  margin: 50px 0;
+  margin: 26px 0 50px 0;
   color: $gold;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 50px;
 }
 
 p {
@@ -104,8 +103,41 @@ article {
   }
 }
 
+::selection {
+  background: $highlightText;
+}
+
+.active {
+  color: $gold;
+}
+
 .gatsby-image-wrapper {
   height: calc(100vh - 60px);
+}
+
+.leaflet-container {
+  height: calc(100vh - 62px);
+  width: 65%;
+
+  .emailLink {
+    color: $black;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+
+  .leaflet-tile-pane {
+    filter: grayscale(100%);
+  }
+
+  .leaflet-popup-content-wrapper {
+    border-radius: 0;
+  }
+
+  .leaflet-control-attribution {
+    display: none;
+  }
 }
 
 .ReactModal__Body--open {

@@ -45,7 +45,7 @@ export default () => (
       spy={true}
       smooth={true}
       duration={500}
-      offset={100}
+      offset={-32}
     >
       Kontakt
     </Link>
