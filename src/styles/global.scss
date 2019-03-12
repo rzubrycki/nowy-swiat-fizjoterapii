@@ -138,6 +138,16 @@ article {
   .leaflet-control-attribution {
     display: none;
   }
+
+  .leaflet-marker-icon {
+    width: 50px;
+    top: -43px;
+    left: -25px;
+  }
+
+  .leaflet-popup {
+    margin-bottom: 55px;
+  }
 }
 
 .ReactModal__Body--open {
