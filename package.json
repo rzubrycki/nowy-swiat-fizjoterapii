@@ -13,6 +13,8 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
+    "core-js": "^2.6.5",
+    "formik": "^1.5.1",
     "gatsby": "^2.1.19",
     "gatsby-image": "^2.0.31",
     "gatsby-plugin-google-analytics": "^2.0.16",
@@ -32,7 +34,8 @@
     "react-leaflet": "^2.2.1",
     "react-modal": "^3.8.1",
     "react-pose": "^4.0.8",
-    "react-scroll": "^1.7.11"
+    "react-scroll": "^1.7.11",
+    "yup": "^0.26.10"
   },
   "devDependencies": {
     "gatsby-cli": "^2.4.13",

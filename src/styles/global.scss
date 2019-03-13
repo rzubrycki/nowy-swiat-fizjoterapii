@@ -49,6 +49,14 @@ button {
   background: transparent;
   outline: none;
 
+  &:disabled {
+    color: $gray;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
   &:after {
     content: ' ';
     border: 2px solid rgba(0, 0, 0, 0);

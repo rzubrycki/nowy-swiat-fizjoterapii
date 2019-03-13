@@ -6,30 +6,44 @@
     margin: 0 0 50px 0;
   }
 
-  .formControl {
-    display: block;
-    width: 100%;
-    min-height: 42px;
-    padding: 6px 12px;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 2px solid $gray;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    color: $black;
-    background-color: transparent;
-    transition: border-color 0.3s ease-in-out;
-    resize: none;
-    box-sizing: border-box;
+  .fieldWrapper {
+    position: relative;
 
-    &:focus {
-      outline: none;
-      border-color: $gold;
+    .formControl {
+      display: block;
+      width: 100%;
+      min-height: 42px;
+      padding: 6px 12px;
+      margin-bottom: 40px;
+      border: none;
+      border-bottom: 2px solid $gray;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      color: $black;
+      background-color: transparent;
+      transition: border-color 0.3s ease-in-out;
+      resize: none;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+        border-color: $gold;
+      }
     }
   }
 
   button {
-    margin: 0 auto;
+    margin: 50px auto;
     display: block;
+  }
+
+  .errorMessage {
+    position: absolute;
+    bottom: -30px;
+    color: #cc0000;
+    padding: 5px 5px 0 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
   }
 }

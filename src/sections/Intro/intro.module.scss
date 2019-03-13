@@ -1,14 +1,16 @@
 .introSection {
   margin: 30px 250px 30px 30px;
+  position: relative;
 
   .introHeading {
     position: absolute;
-    bottom: 100px;
-    left: 100px;
-    width: 500px;
+    bottom: 5%;
+    right: 5%;
+    width: 450px;
+    text-align: right;
 
     .introText {
-      color: $white;
+      color: $black;
     }
   }
 }
