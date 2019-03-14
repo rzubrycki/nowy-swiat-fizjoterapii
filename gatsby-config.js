@@ -41,7 +41,7 @@ module.exports = {
             subsets: [`latin-ext`],
           },
           {
-            family: `Raleway`,
+            family: `Muli`,
             variants: [`400`],
             subsets: [`latin-ext`],
           },
