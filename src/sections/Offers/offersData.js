@@ -10,29 +10,34 @@ export const IndividualWorkWithPatient = [
     duration: `45min`,
   },
   {
-    title: `Terapia manualna + THERAPY PRO`,
+    title: `Terapia manualna + TR THERAPY`,
     content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia autem distinctio, dolore, sint possimus quae doloremque accusamus recusandae nesciunt repellendus repellat minus dolor fuga non. Iure architecto autem ut?`,
     duration: `45min`,
   },
   {
-    title: `Masaż`,
+    title: `Terapia manualna + Fala uderzeniowa`,
     content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia autem distinctio, dolore, sint possimus quae doloremque accusamus recusandae nesciunt repellendus repellat minus dolor fuga non. Iure architecto autem ut?`,
     duration: `45min`,
   },
   {
-    title: `Taping + ćwiczenia`,
+    title: `Masaż`,
+    content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia autem distinctio, dolore, sint possimus quae doloremque accusamus recusandae nesciunt repellendus repellat minus dolor fuga non. Iure architecto autem ut?`,
+    duration: `45min`,
+  },
+  {
+    title: `Taping + ćwiczenia`,
     content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia autem distinctio, dolore, sint possimus quae doloremque accusamus recusandae nesciunt repellendus repellat minus dolor fuga non. Iure architecto autem ut?`,
     duration: `jednorazowo`,
   },
   {
-    title: `Taping dodatkowo do terapii`,
+    title: `Terapia manualna + Taping`,
     content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia autem distinctio, dolore, sint possimus quae doloremque accusamus recusandae nesciunt repellendus repellat minus dolor fuga non. Iure architecto autem ut?`,
-    duration: `jednorazowo`,
+    duration: `50min`,
   },
   {
-    title: 'Kinezyterapia indywidualna',
+    title: `Kinezyterapia indywidualna`,
     content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia autem distinctio, dolore, sint possimus quae doloremque accusamus recusandae nesciunt repellendus repellat minus dolor fuga non. Iure architecto autem ut?`,
-    duration: `30min`,
+    duration: `45min`,
   },
 ]
 
@@ -43,12 +48,17 @@ export const PhysioTherapy = [
     duration: `*`,
   },
   {
+    title: `TR THERAPY`,
+    content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolores sit quas eius magnam atque possimus ut, officia deleniti dolorum repellendus quidem est sunt libero tempore laboriosam aut ad expedita.`,
+    duration: `30min`,
+  },
+  {
     title: `Elektroterapia`,
     content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolores sit quas eius magnam atque possimus ut, officia deleniti dolorum repellendus quidem est sunt libero tempore laboriosam aut ad expedita.`,
     duration: `15-20min`,
   },
   {
-    title: `Ultradźwięki, fonoforeza`,
+    title: `Ultradźwięki, fonoforeza`,
     content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolores sit quas eius magnam atque possimus ut, officia deleniti dolorum repellendus quidem est sunt libero tempore laboriosam aut ad expedita.`,
     duration: `*`,
   },

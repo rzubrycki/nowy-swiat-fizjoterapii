@@ -51,9 +51,14 @@ button {
 
   &:disabled {
     color: $gray;
+    border: 2px solid $gray;
 
     &:hover {
       cursor: not-allowed;
+
+      &:after {
+        border: 2px solid $gray;
+      }
     }
   }
 

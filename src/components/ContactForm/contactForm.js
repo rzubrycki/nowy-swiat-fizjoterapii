@@ -32,7 +32,7 @@ export default class extends Component {
         }}
       >
         {({ errors, touched, isValid }) => (
-          <Form
+          <form
             name="kontakt"
             method="post"
             data-netlify="true"
@@ -92,7 +92,7 @@ export default class extends Component {
             <button type="submit" disabled={isValid === false}>
               Wyślij
             </button>
-          </Form>
+          </form>
         )}
       </Formik>
     )

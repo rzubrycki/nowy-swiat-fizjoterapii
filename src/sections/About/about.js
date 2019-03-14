@@ -29,29 +29,29 @@ export default class extends Component {
         <h2 className="sectionHeading">o mnie</h2>
         <article>
           <p className="highlightedText">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            placeat illum saepe laborum? Illum praesentium, alias vel non dolore
-            hic odio error explicabo eos nam officia repellendus odit debitis
-            sit.
+            Jako fizjoterapeuta pracuję od 2010 roku. Posiadam tytuł mgr
+            Fizjoterapii oraz mgr Wychowania Fizycznego. Studiowałam na Akademii
+            Wychowania Fizycznego w Krakowie. Studia dały mi solidną podstawę,
+            którą wciąż rozwijam i doskonalę na specjalistycznych kursach.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            placeat illum saepe laborum? Illum praesentium, alias vel non dolore
-            hic odio error explicabo eos nam officia repellendus odit debitis
-            sit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dolores placeat illum saepe laborum? Illum praesentium, alias vel
-            non dolore hic odio error explicabo eos nam officia repellendus odit
-            debitis sit.
+            Doświadczenie zawodowe zdobyłam pracując z pacjentami
+            ortopedycznymi, pourazowymi oraz sportowcami. Dodatkowo miałam
+            możliwość pracy pedagogicznej, jako nauczyciel przedmiotów
+            zawodowych w Szkole Policealnej kształcącej przyszłych masażystów.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            placeat illum saepe laborum? Illum praesentium, alias vel non dolore
-            hic odio error explicabo eos nam officia repellendus odit debitis
-            sit.
+            Byłam współautorem kilku publikacji w literaturze o tematyce
+            medycznej. Artykuły, które wspomogłam przy realizacji to: ...
+            Prowadziłam także wykład dotyczący rehabilitacji w osteoporozie na
+            konferencji "Osteoporoza - choroba cywilizacyjna XXI wieku -
+            aktualne aspekty profilaktyki, leczenia i rehabilitacji".
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            placeat illum saepe laborum?
+            Moją odwieczną pasją jest sport i rekreacja. Stąd drugi ukończony
+            kierunek studiów - Wychowanie Fizyczne. Połączenie obu tych zawodów
+            daje możliwość pełniejszego spojrzenia na ciało człowieka - jego
+            możliwości i ograniczenia.
           </p>
           <div className="dialogButtons">
             <button onClick={() => this.handleOpenModal(1)}>
