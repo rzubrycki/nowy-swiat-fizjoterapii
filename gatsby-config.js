@@ -1,20 +1,22 @@
+const config = require('./config/site')
+
 module.exports = {
   siteMetadata: {
-    title:
-      'Nowy Świat Fizjoterapii Anna Roczniak-Zubrycka - Fizjoterapia, Supraśl',
-    description: 'Gabinet Fizjoterapii.',
+    ...config,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Nowy Świat Fizjoterapii Anna Roczniak-Zubrycka`,
-        short_name: `Nowy Świat Fizjoterapii`,
-        start_url: `/`,
-        background_color: `#F4F4F4`,
-        theme_color: `#F4F4F4`,
-        display: `standalone`,
-        icon: `src/assets/images/globe.svg`,
+        name: config.title,
+        short_name: config.shortName,
+        description: config.description,
+        start_url: config.pathPrefix,
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: 'standalone',
+        icon: config.favicon,
         include_favicon: true,
       },
     },
@@ -59,5 +61,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-leaflet`,
+    `gatsby-plugin-offline`,
   ],
 }
