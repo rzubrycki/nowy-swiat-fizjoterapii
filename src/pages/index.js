@@ -16,7 +16,8 @@ export default () => (
       query SEO {
         site {
           siteMetadata {
-            defaultTitle: title
+            title
+            description
           }
         }
       }
@@ -25,7 +26,11 @@ export default () => (
       <React.Fragment>
         <Helmet>
           <html lang="pl" />
-          <title>{data.site.siteMetadata.defaultTitle}</title>
+          <title>{data.site.siteMetadata.title}</title>
+          <meta
+            name="description"
+            content={data.site.siteMetadata.description}
+          />
         </Helmet>
         <Element name="intro" className="element">
           <IntroSection />
