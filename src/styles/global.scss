@@ -24,7 +24,7 @@ h2 {
 
 p {
   font-family: 'Muli', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   margin: 0;
   line-height: 30px;
   letter-spacing: 0.5px;
@@ -93,6 +93,8 @@ button {
 article {
   max-width: 600px;
   margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-word;
 
   p {
     margin-bottom: 20px;
@@ -115,6 +117,7 @@ article {
   .dialogButtons {
     display: flex;
     justify-content: center;
+    margin-bottom: 26px;
   }
 }
 
