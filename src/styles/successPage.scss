@@ -1,0 +1,22 @@
+.successWrapper {
+  height: 100vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 400px;
+  }
+
+  p {
+    margin: 20px;
+    text-align: center;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

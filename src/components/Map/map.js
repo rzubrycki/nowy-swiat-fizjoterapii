@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 import Address from '../Sidebar/Address/address'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
-import './leaflet.css'
 
 let leaflet
 if (typeof window !== 'undefined') {

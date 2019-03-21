@@ -19,15 +19,22 @@
       border-bottom: 2px solid $gray;
       font-size: 16px;
       font-family: 'Muli', sans-serif;
-      color: $black;
       background-color: transparent;
       transition: border-color 0.3s ease-in-out;
       resize: none;
       box-sizing: border-box;
 
+      &::placeholder {
+        color: $black;
+      }
+
       &:focus {
         outline: none;
         border-color: $gold;
+
+        &::placeholder {
+          color: $gold;
+        }
       }
     }
   }

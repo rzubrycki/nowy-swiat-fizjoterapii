@@ -34,6 +34,7 @@ export default class extends Component {
             method="post"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            action="/success"
             className={styles.formWrapper}
           >
             <h2 className="sectionHeading">Kontakt</h2>

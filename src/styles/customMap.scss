@@ -1,0 +1,38 @@
+.mapWrapper {
+  height: calc(100vh - 62px);
+  width: 75%;
+
+  .leaflet-container {
+    height: 100%;
+
+    .emailLink {
+      color: $black;
+
+      &:hover {
+        color: $gold;
+      }
+    }
+
+    .leaflet-tile-pane {
+      filter: grayscale(100%);
+    }
+
+    .leaflet-popup-content-wrapper {
+      border-radius: 0;
+    }
+
+    .leaflet-control-attribution {
+      display: none;
+    }
+
+    .leaflet-marker-icon {
+      width: 50px;
+      top: -43px;
+      left: -25px;
+    }
+
+    .leaflet-popup {
+      margin-bottom: 55px;
+    }
+  }
+}
