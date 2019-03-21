@@ -2,10 +2,9 @@ const config = require('./config/site')
 
 module.exports = {
   siteMetadata: {
-    ...config,
+    ...config
   },
   plugins: [
-    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -15,11 +14,36 @@ module.exports = {
         start_url: config.pathPrefix,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: 'standalone',
+        display: config.display,
         icon: config.favicon,
         include_favicon: true,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-sitemap`,
+    //   options: {
+    //     resolve: `gatsby-plugin-sitemap`,
+    //     options: {
+    //       sitemapSize: 5000,
+    //       query: `
+    //       {
+    //         site {
+    //           siteMetadata {
+    //             siteURLe
+    //           }
+    //         }
+    //         allSitePage {
+    //           edges {
+    //             node {
+    //               path
+    //             }
+    //           }
+    //         }
+    //       }
+    //       `,
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
