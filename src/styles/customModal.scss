@@ -27,6 +27,14 @@
   border-radius: 4px;
   outline: none;
   padding: 60px 100px;
+
+  @media only screen and (max-width: 768px) {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+  }
 }
 
 .customModalOverlay {
@@ -36,4 +44,5 @@
   right: 0px;
   bottom: 0px;
   background-color: $white;
+  z-index: 1000;
 }

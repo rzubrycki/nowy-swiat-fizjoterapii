@@ -10,4 +10,16 @@
   width: 250px;
   font-family: 'Muli', sans-serif;
   text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    bottom: 0;
+    top: unset;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: $white;
+    padding: 10px 0;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.173) 0px -1px 3px;
+  }
 }

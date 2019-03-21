@@ -28,7 +28,7 @@ export default class extends Component {
       <Layout>
         <h2 className="sectionHeading">o mnie</h2>
         <article>
-          <p className="highlightedText">
+          <p>
             Jako fizjoterapeuta pracuję od 2010 roku. Posiadam tytuł mgr
             Fizjoterapii oraz mgr Wychowania Fizycznego. Studiowałam na Akademii
             Wychowania Fizycznego w Krakowie. Studia dały mi solidną podstawę,

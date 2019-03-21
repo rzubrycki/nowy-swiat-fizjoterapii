@@ -3,6 +3,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './intro.module.scss'
+import logo from '../../assets/images/logo.svg'
 
 export default () => (
   <StaticQuery

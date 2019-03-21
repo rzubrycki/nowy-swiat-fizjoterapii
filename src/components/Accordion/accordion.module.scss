@@ -10,12 +10,13 @@ h6 {
   align-items: center;
   position: relative;
 
-  &:first-of-type {
-    border-top: none;
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+    padding: 30px 0;
   }
 
-  &:last-of-type {
-    margin-bottom: 26px;
+  &:first-of-type {
+    border-top: none;
   }
 
   .duration {
@@ -23,6 +24,11 @@ h6 {
     position: absolute;
     right: 20px;
     color: $gray;
+
+    @media only screen and (max-width: 768px) {
+      bottom: 10px;
+      left: 35px;
+    }
   }
 }
 
@@ -35,6 +41,10 @@ h6 {
     margin: 0;
     padding: 0 0 30px 54px;
     color: $gray;
+
+    @media only screen and (max-width: 768px) {
+      padding: 0 0 15px 35px;
+    }
   }
 }
 
