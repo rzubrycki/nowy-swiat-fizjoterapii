@@ -42,9 +42,7 @@ export default () => (
         <Element name="offers" className="element">
           <OffersSection />
         </Element>
-        <Element name="contact" className="element">
-          <ContactSection />
-        </Element>
+        <ContactSection />
         <Sidebar />
       </React.Fragment>
     )}

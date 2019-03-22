@@ -18,8 +18,9 @@
     flex-direction: row;
     justify-content: space-evenly;
     background: $white;
-    padding: 10px 0;
+    padding: 12px 0;
     z-index: 999;
+    box-shadow: 0px -2px 11px -1px rgba(0, 0, 0, 0.15);
   }
 
   @media only screen and (max-width: 440px) {
