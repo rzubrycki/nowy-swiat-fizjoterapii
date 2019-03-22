@@ -13,7 +13,7 @@ h1 {
   color: $gold;
   text-transform: uppercase;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 896px) {
     font-size: 22px;
   }
 
@@ -29,9 +29,11 @@ h2 {
   text-transform: uppercase;
   text-align: center;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 896px) {
     font-size: 22px;
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
+    text-decoration: $gold solid underline;
+    text-underline-position: auto;
   }
 }
 
@@ -42,7 +44,7 @@ p {
   line-height: 30px;
   letter-spacing: 0.5px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 896px) {
     font-size: 15px;
     line-height: 25px;
   }
@@ -126,21 +128,17 @@ article {
   margin: 0 auto;
   text-align: justify;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 896px) {
     text-align: center;
   }
 
   p {
     margin-bottom: 20px;
 
-    @media only screen and (max-width: 768px) {
-      margin-bottom: 15px;
-    }
-
     &:last-of-type {
       margin-bottom: 40px;
 
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 896px) {
         margin-bottom: 15px;
       }
     }
@@ -157,9 +155,12 @@ article {
     justify-content: center;
     margin-bottom: 26px;
 
+    @media only screen and (max-width: 896px) {
+      margin: 0;
+    }
+
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       flex-direction: column;
-      margin: 0;
 
       button:first-of-type {
         margin-bottom: 15px;

@@ -2,10 +2,12 @@
   width: 25%;
   padding: 50px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 896px) {
     width: 100%;
     padding: 0;
     order: 0;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   h2 {
@@ -30,7 +32,7 @@
       resize: none;
       box-sizing: border-box;
 
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 896px) {
         margin-bottom: 30px;
         font-size: 14px;
       }
@@ -53,6 +55,10 @@
   button {
     margin: 50px auto;
     display: block;
+
+    @media only screen and (max-width: 896px) {
+      margin: 20px auto;
+    }
   }
 
   .errorMessage {
@@ -64,7 +70,7 @@
     font-size: 14px;
     white-space: nowrap;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 896px) {
       font-size: 12px;
     }
   }

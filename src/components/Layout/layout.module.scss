@@ -13,11 +13,11 @@
   background-position: center center;
   background-repeat: no-repeat;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 896px) {
     margin: 0;
     padding: 15px;
+    min-height: auto;
     background-image: none;
     background-color: $white;
-    min-height: auto;
   }
 }

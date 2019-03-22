@@ -11,7 +11,7 @@
   font-family: 'Muli', sans-serif;
   text-align: center;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 896px) {
     width: 100%;
     bottom: 0;
     top: unset;
@@ -20,6 +20,15 @@
     background: $white;
     padding: 10px 0;
     z-index: 999;
-    box-shadow: rgba(0, 0, 0, 0.173) 0px -1px 3px;
+  }
+
+  @media only screen and (max-width: 440px) {
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 896px) {
+    address {
+      display: none;
+    }
   }
 }
