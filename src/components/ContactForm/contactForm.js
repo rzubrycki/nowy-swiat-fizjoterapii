@@ -11,7 +11,7 @@ const ContactSchema = Yup.object().shape({
     .email('Niepoprawny adres email. Spróbuj ponownie.')
     .required('Pole jest wymagane.'),
   message: Yup.string()
-    .min(10, 'Wiadomość jest za krótka. Napisz coś więcej.')
+    .min(5, 'Wiadomość jest za krótka. Napisz coś więcej.')
     .required('Pole jest wymagane.'),
 })
 
@@ -45,41 +45,45 @@ export default class extends Component {
               </label>
             </p>
             <div className={styles.fieldWrapper}>
+              <label for="firstName">Imię</label>
               <Field
                 name="firstName"
+                id="firstName"
                 className={styles.formControl}
-                placeholder="Imię"
               />
               {errors.firstName && touched.firstName ? (
                 <div className={styles.errorMessage}>{errors.firstName}</div>
               ) : null}
             </div>
             <div className={styles.fieldWrapper}>
+              <label for="lastName">Nazwisko</label>
               <Field
                 name="lastName"
+                id="lastName"
                 className={styles.formControl}
-                placeholder="Nazwisko"
               />
               {errors.lastName && touched.lastName ? (
                 <div className={styles.errorMessage}>{errors.lastName}</div>
               ) : null}
             </div>
             <div className={styles.fieldWrapper}>
+              <label for="email">Email</label>
               <Field
                 name="email"
+                id="email"
                 type="email"
                 className={styles.formControl}
-                placeholder="Email"
               />
               {errors.email && touched.email ? (
                 <div className={styles.errorMessage}>{errors.email}</div>
               ) : null}
             </div>
             <div className={styles.fieldWrapper}>
+              <label for="message">Wiadomość</label>
               <Field
                 component="textarea"
                 name="message"
-                placeholder="Treść wiadomości"
+                id="message"
                 rows="4"
                 className={styles.formControl}
               />
