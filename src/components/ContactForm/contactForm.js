@@ -45,7 +45,7 @@ export default class extends Component {
               </label>
             </p>
             <div className={styles.fieldWrapper}>
-              <label for="firstName">Imię</label>
+              <label htmlFor="firstName">Imię</label>
               <Field
                 name="firstName"
                 id="firstName"
@@ -56,7 +56,7 @@ export default class extends Component {
               ) : null}
             </div>
             <div className={styles.fieldWrapper}>
-              <label for="lastName">Nazwisko</label>
+              <label htmlFor="lastName">Nazwisko</label>
               <Field
                 name="lastName"
                 id="lastName"
@@ -67,7 +67,7 @@ export default class extends Component {
               ) : null}
             </div>
             <div className={styles.fieldWrapper}>
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <Field
                 name="email"
                 id="email"
@@ -79,7 +79,7 @@ export default class extends Component {
               ) : null}
             </div>
             <div className={styles.fieldWrapper}>
-              <label for="message">Wiadomość</label>
+              <label htmlFor="message">Wiadomość</label>
               <Field
                 component="textarea"
                 name="message"

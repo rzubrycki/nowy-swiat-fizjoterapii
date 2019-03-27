@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 import Layout from '../../components/Layout/layout'
 import Modal from 'react-modal'
-import EducationalModal from '../../components/Modals/educationsModal'
 import CoursesModal from '../../components/Modals/coursesModal'
 
 export default class extends Component {
@@ -55,9 +54,6 @@ export default class extends Component {
           </p>
           <div className="dialogButtons">
             <button onClick={() => this.handleOpenModal(1)}>
-              Wykształcenie
-            </button>
-            <button onClick={() => this.handleOpenModal(2)}>
               Przebyte Kursy
             </button>
           </div>
@@ -70,11 +66,7 @@ export default class extends Component {
           shouldCloseOnOverlayClick={true}
           ariaHideApp={false}
         >
-          {this.state.modalContent === 1 ? (
-            <EducationalModal close={this.handleCloseModal} />
-          ) : (
             <CoursesModal close={this.handleCloseModal} />
-          )}
         </Modal>
       </Layout>
     )

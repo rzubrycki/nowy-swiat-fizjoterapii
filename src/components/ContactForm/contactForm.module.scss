@@ -1,5 +1,5 @@
 .formWrapper {
-  width: 25%;
+  width: 30%;
   padding: 50px;
 
   @media only screen and (max-width: 896px) {
@@ -31,7 +31,7 @@
       display: block;
       width: 100%;
       min-height: 42px;
-      padding: 0 12px 6px 12px;
+      padding: 0 12px 0 12px;
       margin-bottom: 40px;
       border: none;
       border-bottom: 2px solid $gray;
@@ -64,15 +64,10 @@
 
   .errorMessage {
     position: absolute;
-    bottom: -25px;
+    bottom: -30px;
     color: #cc0000;
-    padding: 5px 5px 0 12px;
+    padding: 0 0 0 12px;
     font-family: 'Muli', sans-serif;
-    font-size: 14px;
-    white-space: nowrap;
-
-    @media only screen and (max-width: 896px) {
-      font-size: 12px;
-    }
+    font-size: 12px;
   }
 }
