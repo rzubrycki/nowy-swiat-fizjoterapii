@@ -19,31 +19,6 @@ module.exports = {
         include_favicon: true,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-sitemap`,
-    //   options: {
-    //     resolve: `gatsby-plugin-sitemap`,
-    //     options: {
-    //       sitemapSize: 5000,
-    //       query: `
-    //       {
-    //         site {
-    //           siteMetadata {
-    //             siteURLe
-    //           }
-    //         }
-    //         allSitePage {
-    //           edges {
-    //             node {
-    //               path
-    //             }
-    //           }
-    //         }
-    //       }
-    //       `,
-    //     },
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -84,7 +59,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-leaflet`,
-    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-leaflet`
   ],
 }

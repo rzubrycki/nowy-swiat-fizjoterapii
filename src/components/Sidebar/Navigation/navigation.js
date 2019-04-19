@@ -1,7 +1,70 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
-import { Link } from 'react-scroll'
 import styles from './navigation.module.scss'
+import { Link } from 'react-scroll'
+import MediaQuery from 'react-responsive'
+
+const aboutMe = (
+  <Fragment>
+    <MediaQuery maxWidth={1024}>
+      <Link
+        className={styles.link}
+        activeClass="active"
+        to="about"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={0}
+      >
+        O mnie
+      </Link>
+    </MediaQuery>
+    <MediaQuery minWidth={1025}>
+      <Link
+        className={styles.link}
+        activeClass="active"
+        to="about"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-30}
+      >
+        O mnie
+      </Link>
+    </MediaQuery>
+  </Fragment>
+)
+
+const offer = (
+  <Fragment>
+    <MediaQuery maxWidth={1024}>
+      <Link
+        className={styles.link}
+        activeClass="active"
+        to="offers"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={0}
+      >
+        Oferta
+      </Link>
+    </MediaQuery>
+    <MediaQuery minWidth={1025}>
+      <Link
+        className={styles.link}
+        activeClass="active"
+        to="offers"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-30}
+      >
+        Oferta
+      </Link>
+    </MediaQuery>
+  </Fragment>
+)
 
 export default () => (
   <nav className={styles.nav}>
@@ -16,28 +79,8 @@ export default () => (
     >
       Home
     </Link>
-    <Link
-      className={styles.link}
-      activeClass="active"
-      to="about"
-      spy={true}
-      smooth={true}
-      duration={500}
-      offset={-30}
-    >
-      O mnie
-    </Link>
-    <Link
-      className={styles.link}
-      activeClass="active"
-      to="offers"
-      spy={true}
-      smooth={true}
-      duration={500}
-      offset={-30}
-    >
-      Oferta
-    </Link>
+    {aboutMe}
+    {offer}
     <Link
       className={styles.link}
       activeClass="active"
