@@ -2,10 +2,11 @@ import React from 'react'
 
 import styles from './address.module.scss'
 import logo from '../../../assets/images/logo.svg'
+import fbLogo from '../../../assets/images/facebook.svg'
 
 export default props => (
   <address className={styles.address}>
-    {props.logo ? <img src={logo} alt="logo" /> : null}
+    {props.logo ? <img src={logo} alt="logo" className={styles.logo} /> : null}
     {props.logo ? null : 'Nowy Świat Fizjoterapii'}
     <br />
     Anna Roczniak-Zubrycka
@@ -22,5 +23,15 @@ export default props => (
     >
       aneczka.roczniak@gmail.com
     </a>
+    {props.logo ? null : (
+      <a
+        href="https://www.facebook.com/nowyswiatfizjoterapii/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.facebookLogo}
+      >
+        <img src={fbLogo} alt="facebook logo" />
+      </a>
+    )}
   </address>
 )

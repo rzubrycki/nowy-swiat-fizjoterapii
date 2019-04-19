@@ -9,7 +9,17 @@ address.address {
     font-size: 12px;
   }
 
-  img {
+  .logo {
     width: 150px;
+  }
+
+  .facebookLogo {
+    display: inline-block;
+    margin-left: 10px;
+
+    img {
+      width: 20px;
+      vertical-align: top;
+    }
   }
 }
