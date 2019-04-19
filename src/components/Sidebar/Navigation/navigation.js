@@ -66,6 +66,37 @@ const offer = (
   </Fragment>
 )
 
+const contact = (
+  <Fragment>
+    <MediaQuery maxWidth={1024}>
+      <Link
+        className={styles.link}
+        activeClass="active"
+        to="contact"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-10}
+      >
+        Kontakt
+      </Link>
+    </MediaQuery>
+    <MediaQuery minWidth={1025}>
+      <Link
+        className={styles.link}
+        activeClass="active"
+        to="contact"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-33}
+      >
+        Kontakt
+      </Link>
+    </MediaQuery>
+  </Fragment>
+)
+
 export default () => (
   <nav className={styles.nav}>
     <Link
@@ -81,16 +112,6 @@ export default () => (
     </Link>
     {aboutMe}
     {offer}
-    <Link
-      className={styles.link}
-      activeClass="active"
-      to="contact"
-      spy={true}
-      smooth={true}
-      duration={500}
-      offset={-33}
-    >
-      Kontakt
-    </Link>
+    {contact}
   </nav>
 )
