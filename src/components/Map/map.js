@@ -15,6 +15,7 @@ export default class extends Component {
       lat: '53.20336',
       lng: '23.35098',
       zoom: 15,
+      showLogo: true
     }
   }
 
@@ -35,7 +36,7 @@ export default class extends Component {
             <TileLayer url="https://{s}.tile.osm.org/{z}/{x}/{y}.png" />
             <Marker position={position} ref={initMarker} icon={customMarker}>
               <Popup>
-                <Address />
+                <Address logo={this.state.showLogo} />
               </Popup>
             </Marker>
           </Map>

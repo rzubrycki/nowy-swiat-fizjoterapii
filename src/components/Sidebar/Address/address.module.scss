@@ -5,7 +5,11 @@ address.address {
   color: $black;
   text-align: center;
 
-  @media only screen and (max-width: 896px) {
+  @media only screen and (max-width: 1024px) {
     font-size: 12px;
+  }
+
+  img {
+    width: 150px;
   }
 }

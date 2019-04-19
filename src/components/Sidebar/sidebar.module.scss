@@ -11,7 +11,7 @@
   font-family: 'Muli', sans-serif;
   text-align: center;
 
-  @media only screen and (max-width: 896px) {
+  @media only screen and (max-width: 1024px) {
     width: 100%;
     bottom: 0;
     top: unset;
@@ -27,7 +27,7 @@
     justify-content: center;
   }
 
-  @media only screen and (max-width: 896px) {
+  @media only screen and (max-width: 1024px) {
     address {
       display: none;
     }

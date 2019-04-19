@@ -37,7 +37,7 @@ export default class extends Component {
             action="/success"
             className={styles.formWrapper}
           >
-            <h2 className="sectionHeading">Kontakt</h2>
+            <h2>Kontakt</h2>
             <input type="hidden" name="form-name" value="kontakt" />
             <p hidden>
               <label>
@@ -85,7 +85,7 @@ export default class extends Component {
                 name="message"
                 id="message"
                 rows="4"
-                className={styles.formControl}
+                className={`${styles.formControl} ${styles.textArea}`}
               />
               {errors.message && touched.message ? (
                 <div className={styles.errorMessage}>{errors.message}</div>
