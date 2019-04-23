@@ -58,7 +58,7 @@ export default class extends Component {
           <ul className={styles.list}>
             {publications.map((el, index) => (
               <li key={index}>
-                <img src={GlobeIcon} alt="logo" />
+                <img src={GlobeIcon} alt="globus" />
                 {el}
               </li>
             ))}

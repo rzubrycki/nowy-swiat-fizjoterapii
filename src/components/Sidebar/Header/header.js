@@ -1,8 +1,8 @@
 import React from 'react'
 
+import styles from './header.module.scss'
 import { Link } from 'react-scroll'
 import logo from '../../../assets/images/logo.svg'
-import styles from './header.module.scss'
 
 export default () => (
   <header>
@@ -14,7 +14,7 @@ export default () => (
       duration={500}
       offset={-30}
     >
-      <img src={logo} alt="Nowy Świat Fizjoterapii" className={styles.logo} />
+      <img src={logo} alt="logo Nowy Świat Fizjoterapii" className={styles.logo} />
     </Link>
   </header>
 )

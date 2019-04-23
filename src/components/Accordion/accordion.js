@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 
-import posed from 'react-pose'
 import styles from './accordion.module.scss'
+import posed from 'react-pose'
 import ArrowUpIcon from '../../assets/images/arrow-up.svg'
 import GlobeIcon from '../../assets/images/globe.svg'
 
@@ -32,13 +32,13 @@ export default class extends Component {
                   {open === i ? (
                     <img
                       src={ArrowUpIcon}
-                      alt="arrow up"
+                      alt="strzałka do góry"
                       className={styles.arrowIcon}
                     />
                   ) : (
                     <img
                       src={ArrowUpIcon}
-                      alt="arrow up"
+                      alt="strzałka do góry"
                       className={`${styles.arrowIcon} ${styles.open}`}
                     />
                   )}
@@ -60,7 +60,7 @@ export default class extends Component {
                         <ul>
                           {listContent.map((el, index) => (
                             <li key={index}>
-                              <img src={GlobeIcon} alt="Logo" />
+                              <img src={GlobeIcon} alt="globus" />
                               {el}
                             </li>
                           ))}

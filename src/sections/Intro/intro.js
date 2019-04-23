@@ -1,8 +1,8 @@
 import React from 'react'
 
+import styles from './intro.module.scss'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import styles from './intro.module.scss'
 import logo from '../../assets/images/logo.svg'
 
 export default () => (
@@ -21,7 +21,7 @@ export default () => (
     render={data => (
       <div className={styles.introSection}>
         <Img fluid={data.introImage.childImageSharp.fluid} />
-        <img src={logo} alt="Nowy Świat Fizjoterapii" className={styles.logoMobile} />
+        <img src={logo} alt="logo Nowy Świat Fizjoterapii" className={styles.logoMobile} />
         <div className={styles.introHeading}>
           <h1>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores

@@ -6,7 +6,7 @@ import fbLogo from '../../../assets/images/facebook.svg'
 
 export default props => (
   <address className={styles.address}>
-    {props.logo ? <img src={logo} alt="logo" className={styles.logo} /> : null}
+    {props.logo ? <img src={logo} alt="logo Nowy Świat Fizjoterapii" className={styles.logo} /> : null}
     {props.logo ? null : 'Nowy Świat Fizjoterapii'}
     <br />
     Anna Roczniak-Zubrycka
