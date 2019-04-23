@@ -30,6 +30,7 @@ export default () => (
         <p className={styles.blockHeading}>Estetyka:</p>
         <Accordion data={Aestetihcs} />
       </div>
+      <p className={styles.durationTip}>* czas trwania zabiegu uzależniony jest od rozległości miejsca zabiegowego</p>
     </div>
   </Layout>
 )

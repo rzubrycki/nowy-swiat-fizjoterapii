@@ -37,7 +37,7 @@ export default class extends Component {
   render() {
     return (
       <Layout>
-        <h2>o mnie</h2>
+        <h2>O mnie</h2>
         <article>
           <p>
             Jako fizjoterapeuta pracuję od 2010 roku. Posiadam tytuł mgr

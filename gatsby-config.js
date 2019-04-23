@@ -2,7 +2,7 @@ const config = require('./config/site')
 
 module.exports = {
   siteMetadata: {
-    ...config
+    ...config,
   },
   plugins: [
     {
@@ -59,6 +59,35 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-leaflet`
+    `gatsby-plugin-react-leaflet`,
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+        }
+      `,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: config.url,
+        sitemap: `${config.url}sitemap.xml`,
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
   ],
 }
