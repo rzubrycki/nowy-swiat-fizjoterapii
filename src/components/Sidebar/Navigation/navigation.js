@@ -76,7 +76,7 @@ const contact = (
         spy={true}
         smooth={true}
         duration={500}
-        offset={-10}
+        offset={0}
       >
         Kontakt
       </Link>
