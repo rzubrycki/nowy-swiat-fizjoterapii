@@ -37,7 +37,7 @@ export default () => (
           <meta property="og:site_name" content={data.site.siteMetadata.title} />
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://annaroczniak.netlify.com/" />
+          <meta property="og:url" content="https://nowyswiat.fi/" />
         </Helmet>
         <Element name="intro" className="element">
           <IntroSection />

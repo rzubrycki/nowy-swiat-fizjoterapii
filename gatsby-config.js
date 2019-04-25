@@ -89,5 +89,6 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
+    `gatsby-plugin-offline`,
   ],
 }
