@@ -21,7 +21,7 @@ const aboutMe = (
     </MediaQuery>
     <MediaQuery minWidth={1025}>
       <Link
-        className={styles.link}
+        className={`${styles.link} ${styles.safariBugSolver}`}
         activeClass="active"
         to="about"
         spy={true}

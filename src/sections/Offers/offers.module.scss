@@ -10,10 +10,19 @@
 
     @media only screen and (max-width: 1024px) {
       font-size: 18px;
+      margin: 55px 0 25px 0;
+    }
+
+    &.fixMargin {
+      margin: 25px 0;
     }
   }
 
   .durationTip {
-    margin-bottom: 26px;
+    margin: 26px 0;
+
+    @media only screen and (max-width: 1024px) {
+      font-size: 13px;
+    }
   }
 }

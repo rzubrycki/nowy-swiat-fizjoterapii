@@ -15,7 +15,7 @@ export default () => (
     <div className={styles.contentWrapper}>
       <h2>Oferta</h2>
       <div className={styles.accordionWrapper}>
-        <p className={styles.blockHeading}>Indywidualna praca z pacjentem:</p>
+        <p className={`${styles.blockHeading} ${styles.fixMargin}`}>Indywidualna praca z pacjentem:</p>
         <Accordion data={IndividualWorkWithPatient} />
       </div>
       <div>

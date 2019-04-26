@@ -27,10 +27,12 @@ h6 {
 
   .duration {
     right: 20px;
+    top: 32px;
 
     @media only screen and (max-width: 1024px) {
-      bottom: 10px;
+      bottom: 6px;
       left: 35px;
+      top: unset;
     }
   }
 }
