@@ -18,7 +18,7 @@ export default props => (
     +48 502 489 314
     <br />
     <a
-      href="mailto:aneczka.roczniak@gmai.com?subject=Zapytanie%20ze%20strony%20ania.pl"
+      href="mailto:aneczka.roczniak@gmai.com?subject=Zapytanie%20ze%20strony%20nowyswiat.fi"
       className="emailLink"
     >
       aneczka.roczniak@gmail.com
