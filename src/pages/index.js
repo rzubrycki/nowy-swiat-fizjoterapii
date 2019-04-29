@@ -32,6 +32,7 @@ export default () => (
             name="description"
             content={data.site.siteMetadata.description}
           />
+          <meta name="google-site-verification" content="_YGuJ0KtOyJwYSvcFfsEh0kY27XAter24us4PJvqUj8" />
           <meta property="og:description" content={data.site.siteMetadata.description} />
           <meta property="og:locale" content="pl" />
           <meta property="og:site_name" content={data.site.siteMetadata.title} />
