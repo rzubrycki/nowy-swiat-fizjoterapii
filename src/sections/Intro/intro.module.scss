@@ -60,6 +60,14 @@
   height: 100%;
   cursor: pointer;
 
+  @media only screen and (max-width: 1024px) {
+    height: 100vh;
+  }
+
+  @media only screen and (max-width: 440px) {
+    height: 50vh;
+  }
+
   &:hover {
     .arrow {
       border-color: $gold;
@@ -96,16 +104,6 @@
     &.right {
       right: 23px;
       transform: translate3d(0, -50%, 0) rotate(45deg);
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-40%, -60%) rotate(45deg);
-      width: 200%;
-      height: 200%;
     }
   }
 }

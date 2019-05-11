@@ -172,8 +172,16 @@ article {
   height: calc(100vh - 60px);
   border-radius: 4px;
 
+  @media only screen and (max-width: 440px) {
+   height: 50vh;
+  }
+
   img {
     object-position: top !important;
+
+    @media only screen and (max-width: 1024px) {
+      object-position: left !important;
+    }
   }
 }
 
