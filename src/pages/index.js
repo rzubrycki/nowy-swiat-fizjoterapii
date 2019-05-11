@@ -5,7 +5,7 @@ import { Element } from 'react-scroll'
 import { Helmet } from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Sidebar from '../components/Sidebar/sidebar'
-import IntroSection from '../sections/Intro/intro'
+import SlideShow from '../sections/Intro/introSlideashow'
 import AboutSection from '../sections/About/about'
 import OffersSection from '../sections/Offers/offers'
 import ContactSection from '../sections/Contact/contact'
@@ -41,7 +41,7 @@ export default () => (
           <meta property="og:url" content="https://nowyswiat.fi/" />
         </Helmet>
         <Element name="intro" className="element">
-          <IntroSection />
+          <SlideShow />
         </Element>
         <Element name="about" className="element">
           <AboutSection />
