@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './modal.module.scss'
 import CloseIcon from '../../assets/images/close.svg'
-import { CoursesData } from './coursesData'
+import { CoursesData } from '../../consts/coursesData'
 
 export default ({ close }) => (
   <div className={styles.modalWrapper}>

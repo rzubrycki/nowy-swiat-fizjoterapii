@@ -8,7 +8,7 @@ import {
   PhysioTherapy,
   WorkWithMachines,
   Aestetihcs,
-} from './offersData'
+} from '../../consts/offersData'
 
 export default () => (
   <Layout>

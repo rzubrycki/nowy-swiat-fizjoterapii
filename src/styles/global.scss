@@ -172,8 +172,12 @@ article {
   height: calc(100vh - 60px);
   border-radius: 4px;
 
+  @media only screen and (max-width: 1024px) {
+    border-radius: 0;
+  }
+
   @media only screen and (max-width: 440px) {
-   height: 50vh;
+    height: 50vh;
   }
 
   img {
