@@ -97,21 +97,23 @@ const contact = (
   </Fragment>
 )
 
-export default () => (
-  <nav className={styles.nav}>
-    <Link
-      className={styles.link}
-      activeClass="active"
-      to="intro"
-      spy={true}
-      smooth={true}
-      duration={500}
-      offset={-30}
-    >
-      Home
-    </Link>
-    {aboutMe}
-    {offer}
-    {contact}
-  </nav>
-)
+export function Navigation() {
+  return (
+    <nav className={styles.nav}>
+      <Link
+        className={styles.link}
+        activeClass="active"
+        to="intro"
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={-30}
+      >
+        Home
+      </Link>
+      {aboutMe}
+      {offer}
+      {contact}
+    </nav>
+  )
+}

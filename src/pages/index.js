@@ -4,11 +4,11 @@ import '../assets/css/normalize.css'
 import { Element } from 'react-scroll'
 import { Helmet } from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import Sidebar from '../components/Sidebar/sidebar'
-import SlideShow from '../sections/Intro/introSlideashow'
-import AboutSection from '../sections/About/about'
-import OffersSection from '../sections/Offers/offers'
-import ContactSection from '../sections/Contact/contact'
+import { Sidebar } from '../components/Sidebar/sidebar'
+import { SlideShow } from '../sections/Intro/slideShow'
+import { AboutSection } from '../sections/About/about'
+import { OffersSection } from '../sections/Offers/offers'
+import { ContactSection } from '../sections/Contact/contact'
 
 export default () => (
   <StaticQuery
@@ -32,10 +32,19 @@ export default () => (
             name="description"
             content={data.site.siteMetadata.description}
           />
-          <meta name="google-site-verification" content="_YGuJ0KtOyJwYSvcFfsEh0kY27XAter24us4PJvqUj8" />
-          <meta property="og:description" content={data.site.siteMetadata.description} />
+          <meta
+            name="google-site-verification"
+            content="_YGuJ0KtOyJwYSvcFfsEh0kY27XAter24us4PJvqUj8"
+          />
+          <meta
+            property="og:description"
+            content={data.site.siteMetadata.description}
+          />
           <meta property="og:locale" content="pl" />
-          <meta property="og:site_name" content={data.site.siteMetadata.title} />
+          <meta
+            property="og:site_name"
+            content={data.site.siteMetadata.title}
+          />
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://nowyswiat.fi/" />

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment, useState } from 'react'
 
 import styles from './accordion.module.scss'
 import posed from 'react-pose'
@@ -10,70 +10,60 @@ const Content = posed.div({
   open: { height: 'auto' },
 })
 
-export default class extends Component {
-  state = { open: false }
+export function Accordion(props) {
+  const [open, openAccordion] = useState(false)
 
-  render() {
-    const { open } = this.state
-    return (
-      <Fragment>
-        {this.props.data.map(
-          (
-            { title, content, listHeading, listContent, duration, price },
-            i
-          ) => {
-            return (
-              <Fragment key={i}>
-                <h6
-                  onClick={() =>
-                    this.setState({ open: open === i ? false : i })
-                  }
-                >
-                  {open === i ? (
-                    <img
-                      src={ArrowUpIcon}
-                      alt="strzałka do góry"
-                      className={styles.arrowIcon}
-                    />
-                  ) : (
-                    <img
-                      src={ArrowUpIcon}
-                      alt="strzałka do góry"
-                      className={`${styles.arrowIcon} ${styles.open}`}
-                    />
+  return (
+    <Fragment>
+      {props.data.map(
+        ({ title, content, listHeading, listContent, duration, price }, i) => {
+          return (
+            <Fragment key={i}>
+              <h6 onClick={() => openAccordion(open === i ? false : i)}>
+                {open === i ? (
+                  <img
+                    src={ArrowUpIcon}
+                    alt="strzałka do góry"
+                    className={styles.arrowIcon}
+                  />
+                ) : (
+                  <img
+                    src={ArrowUpIcon}
+                    alt="strzałka do góry"
+                    className={`${styles.arrowIcon} ${styles.open}`}
+                  />
+                )}
+                {title}
+                <span className={styles.duration}>
+                  {price} / {duration}
+                </span>
+              </h6>
+              <Content
+                className={styles.content}
+                pose={open === i ? 'open' : 'closed'}
+              >
+                <div className={styles.contentWrapper}>
+                  <p>{content}</p>
+                  <br />
+                  {listContent.length === 0 ? null : (
+                    <Fragment>
+                      <p className={styles.listHeading}>{listHeading}</p>
+                      <ul>
+                        {listContent.map((el, index) => (
+                          <li key={index}>
+                            <img src={GlobeIcon} alt="globus" />
+                            {el}
+                          </li>
+                        ))}
+                      </ul>
+                    </Fragment>
                   )}
-                  {title}
-                  <span className={styles.duration}>
-                    {price} / {duration}
-                  </span>
-                </h6>
-                <Content
-                  className={styles.content}
-                  pose={open === i ? 'open' : 'closed'}
-                >
-                  <div className={styles.contentWrapper}>
-                    <p>{content}</p>
-                    <br />
-                    {listContent.length === 0 ? null : (
-                      <Fragment>
-                        <p className={styles.listHeading}>{listHeading}</p>
-                        <ul>
-                          {listContent.map((el, index) => (
-                            <li key={index}>
-                              <img src={GlobeIcon} alt="globus" />
-                              {el}
-                            </li>
-                          ))}
-                        </ul>
-                      </Fragment>
-                    )}
-                  </div>
-                </Content>
-              </Fragment>
-            )
-          }
-        )}
-      </Fragment>
-    )
-  }
+                </div>
+              </Content>
+            </Fragment>
+          )
+        }
+      )}
+    </Fragment>
+  )
 }

@@ -11,7 +11,7 @@ import {
 } from '../../consts/introData'
 import logo from '../../assets/images/logo.svg'
 
-function SlideShow() {
+export function SlideShow() {
   const [index, setIndex] = useState(0)
   const { allFile } = useStaticQuery(
     graphql`
@@ -110,4 +110,3 @@ function SlideShow() {
     </div>
   )
 }
-export default SlideShow
