@@ -9,7 +9,6 @@ import { SlideShow } from '../sections/Intro/slideShow'
 import { AboutSection } from '../sections/About/about'
 import { OffersSection } from '../sections/Offers/offers'
 import { ContactSection } from '../sections/Contact/contact'
-import { FacebookMessangerWidget } from '../components/FacebookMessangerWidget/facebookMessangerWidget'
 
 export default () => (
   <StaticQuery
@@ -63,7 +62,6 @@ export default () => (
           <ContactSection />
         </Element>
         <Sidebar />
-        <FacebookMessangerWidget />
       </React.Fragment>
     )}
   />
