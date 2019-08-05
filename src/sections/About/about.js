@@ -18,7 +18,7 @@ const publications = [
 
 export function AboutSection() {
   const [modalIsOpen, modalState] = useState(false)
-  const [modalContent, modalContentState] = useState(0)
+  const [modalContentState] = useState(0)
 
   const handleOpenModal = id => {
     modalState(true)

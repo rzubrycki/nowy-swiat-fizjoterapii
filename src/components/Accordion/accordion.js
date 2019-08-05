@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useState } from 'react'
+import React, { Fragment, useState } from 'react'
 
 import styles from './accordion.module.scss'
 import posed from 'react-pose'

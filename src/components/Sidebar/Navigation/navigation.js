@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 
 import styles from './navigation.module.scss'
 import { Link } from 'react-scroll'
+import { Link as GatsbyLink } from 'gatsby'
 import MediaQuery from 'react-responsive'
 
 const aboutMe = (
@@ -114,6 +115,12 @@ export function Navigation() {
       {aboutMe}
       {offer}
       {contact}
+      <GatsbyLink
+        className={styles.link}
+        to="/dotacja"
+      >
+        Dotacja
+      </GatsbyLink>
     </nav>
   )
 }

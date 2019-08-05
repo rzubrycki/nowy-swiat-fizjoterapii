@@ -18,7 +18,7 @@ export const IndividualWorkWithPatient = [
       'Terapia manualna polega na ucisku odpowiednich punktów na ciele, w celu przywrócenia równowagi mięśniowej. Wiąże się z pracą rąk fizjoterapeuty na ciele pacjenta. Może być skierowana na tkanki miękkie lub stawy. Często przypomina masaż. Terapia manualna ma zastosowanie przy bólach kręgosłupa, uszkodzeniach stawów i tkanek miękkich, złamaniach, zwichnięciach, wadach postawy, stanach napięcia mięśni, nerwobólach, a także w leczeniu pooperacyjnym czy po urazach sportowych.',
     listContent: [],
     duration: '45min',
-    price: '50 zł',
+    price: '60 zł',
   },
   {
     title: 'Terapia manualna + TR THERAPY',
@@ -42,7 +42,7 @@ export const IndividualWorkWithPatient = [
       'Masaż jest metodą leczenia fizykalnego objawów chorobowych, a w wielu przypadkach przyczyn chorobowych. Polega on na mechanicznym drażnieniu tkanek, wywierając pośredni i bezpośredni wpływ na organizm. Składa się z wielu chwytów, ruchów i opracowań (głaskania, rozcierania, ugniatania, oklepywania, wibracje, roztrząsania, wałkowania itp.), których celem jest leczenie i zapobieganie wielu chorobom. W Nowym Świecie Fizjoterapii w ramach pracy z pacjentem istnieje możliwość wykonania masażu: klasycznego, leczniczego, relaksacyjnego, tkanek głębokich, bańką chińską, czy drenażu limfatycznego.',
     listContent: [],
     duration: '45min',
-    price: '50 zł',
+    price: '60 zł',
   },
   {
     title: 'Taping + ćwiczenia',
@@ -94,7 +94,7 @@ export const PhysioTherapy = [
       'Przepływ prądu przez ciało pacjenta jest bodźcem leczniczym. Dzięki temu można poprawić ukrwienie, zmniejszyć napięcie mięśniowe i bóle oraz przyspieszyć proces wchłaniania się obrzęków. Do dyspozycji mamy następujące rodzaje prądów: TENS, IF, Trabert, DD, galwaniczny, elektrostymulacja.',
     listContent: [],
     duration: '15-20min',
-    price: '9 zł',
+    price: '10 zł',
   },
   {
     title: 'Ultradźwięki, fonoforeza',
