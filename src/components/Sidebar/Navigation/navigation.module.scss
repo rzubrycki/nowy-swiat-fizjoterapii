@@ -15,7 +15,9 @@ nav.nav {
     display: block;
 
     @media only screen and (max-width: 1024px) {
-      font-size: 14px;
+      font-size: 13px;
+      padding: 12px 6px;
+      white-space: nowrap;
     }
 
     &.safariBugSolver {
