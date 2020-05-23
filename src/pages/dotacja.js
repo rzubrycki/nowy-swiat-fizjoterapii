@@ -14,13 +14,13 @@ export default () => (
       <img src={lgdLogo} alt="LGD" />
       <img src={prowLogo} alt="PROW" />
     </div>
-    <p className="donationHeading">
+    <h1 class="donationHeading">
       „Europejski Fundusz Rolny na rzecz Rozwoju Obszarów Wiejskich: Europa
       inwestująca w obszary wiejskie”
-    </p>
+    </h1>
     <p>
       Utworzenie gabinetu fizjoterapeutycznego „Nowy Świat Fizjoterapii” w
-      Supraślu jest współfinansowane ze środków Unii Europejskiej w ramach
+      Supraślu zostało współfinansowane ze środków Unii Europejskiej w ramach
       poddziałania 19.2 „Wsparcie na wdrażanie operacji w ramach strategii
       rozwoju lokalnego kierowanego przez społeczność” Programu Rozwoju Obszarów
       Wiejskich na lata 2014 – 2020.
